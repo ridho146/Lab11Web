@@ -37,7 +37,7 @@ php spark
 ![4](https://user-images.githubusercontent.com/56241745/122187150-f84c8200-ceb8-11eb-82b3-1b63ae79aa21.png)
 ## Mengaktifkan Mode Debugging
 ### Codeigniter 4 menyediakan fitur debugging untuk memudahkan developer untuk  mengetahui pesan error apabila terjadi kesalahan dalam membuat kode program. Secara default fitur ini belum aktif. Ketika terjadi error pada aplikasi akan ditampilkan pesan kesalahan seperti berikut.
-### Semua jenis error akan ditampilkan sama. Untuk memudahkan mengetahui jenis errornya, maka perlu diaktifkan mode debugging dengan mengubah nilai konfigurasi pada environment variable CI_ENVIRINMENT menjadi development.
+### Semua jenis error akan ditampilkan sama. Untuk memudahkan mengetahui jenis errornya, maka perlu diaktifkan mode debugging dengan mengubah nilai konfigurasi pada environment variable CI_ENVIRONMENT menjadi development.
 ![5](https://user-images.githubusercontent.com/56241745/122188176-e9b29a80-ceb9-11eb-9761-75e7c8304ee3.png)
 ### Ubah nama file env menjadi .env kemudian buka file tersebut dan ubah nilai variable CI_ENVIRINMENT menjadi development.
 ![6](https://user-images.githubusercontent.com/56241745/122188730-72c9d180-ceba-11eb-906f-e19d86c3a89a.png)
@@ -62,4 +62,19 @@ php spark routes
 ## Membuat Controller
 ### Selanjutnya adalah membuat Controller Page. Buat file baru dengan nama `page.php` pada direktori Controller kemudian isi kodenya seperti berikut.
 ![9](https://user-images.githubusercontent.com/56241745/122194270-7d3a9a00-cebf-11eb-9160-c04261deedda.png)
-### Tambahkan method baru pada Controller Page seperti berikut.
+### Tambahkan method baru pada Controller Page seperti berikut. Method ini belum ada pada routing, sehingga cara mengaksesnya dengan menggunakan alamat : http://localhost/lab11_php_ci/ci4/public/page/tos
+![10](https://user-images.githubusercontent.com/56241745/122217878-078ef800-ced8-11eb-948a-5cada664f1f5.png)
+## Membuat View
+### Selanjutnya adalam membuat view untuk tampilan web agar lebih menarik. Buat file baru dengan nama `about.php` pada direktori view (app/view/about.php) kemudian isi kodenya seperti berikut.
+![11](https://user-images.githubusercontent.com/56241745/122219646-d6172c00-ced9-11eb-9dbd-d34416299b8a.png)
+### Ubah method about pada class Controller Page menjadi seperti berikut:
+![12](https://user-images.githubusercontent.com/56241745/122219996-23939900-ceda-11eb-8191-a31d3b37f475.png)
+## Membuat Layout Web dengan CSS
+### Buat file css pada direktori public dengan nama style.css copy file dari praktikum lab4_layout. Kita akan gunakan layout yang pernah dibuat pada praktikum 4.
+![13](https://user-images.githubusercontent.com/56241745/122221153-36f33400-cedb-11eb-9878-4e03aac06685.png)
+### Kemudian buat folder template pada direktori view kemudian buat file `header.php` dan `footer.php`
+### File app/view/template/header.php
+![14](https://user-images.githubusercontent.com/56241745/122222305-550d6400-cedc-11eb-8933-b9628582846b.png)
+### File app/view/template/footer.php
+![15](https://user-images.githubusercontent.com/56241745/122222365-65254380-cedc-11eb-9edb-cdb55e1b450b.png)
+### Kemudian ubah file app/view/about.php seperti berikut.
