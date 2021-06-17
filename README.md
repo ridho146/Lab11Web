@@ -37,6 +37,7 @@ php spark
 ![4](https://user-images.githubusercontent.com/56241745/122187150-f84c8200-ceb8-11eb-82b3-1b63ae79aa21.png)
 ## Mengaktifkan Mode Debugging
 ### Codeigniter 4 menyediakan fitur debugging untuk memudahkan developer untuk  mengetahui pesan error apabila terjadi kesalahan dalam membuat kode program. Secara default fitur ini belum aktif. Ketika terjadi error pada aplikasi akan ditampilkan pesan kesalahan seperti berikut.
+![5a](https://user-images.githubusercontent.com/56241745/122376736-9f4f1d80-cf8e-11eb-9e3e-14687b5ebcaa.png)
 ### Semua jenis error akan ditampilkan sama. Untuk memudahkan mengetahui jenis errornya, maka perlu diaktifkan mode debugging dengan mengubah nilai konfigurasi pada environment variable CI_ENVIRONMENT menjadi development.
 ![5](https://user-images.githubusercontent.com/56241745/122188176-e9b29a80-ceb9-11eb-9761-75e7c8304ee3.png)
 ### Ubah nama file env menjadi .env kemudian buka file tersebut dan ubah nilai variable CI_ENVIRINMENT menjadi development.
@@ -56,7 +57,7 @@ $routes->get('/faqs', 'Page::faqs');
 php spark routes
 ```
 ![7](https://user-images.githubusercontent.com/56241745/122192786-2c767180-cebe-11eb-92df-e74b38eee08c.png)
-### Selanjutnya coba akses route yang telah dibuat dengan mengakses alamat url http://localhost/lab11_php_ci/ci4/public/about
+### Selanjutnya coba akses route yang telah dibuat dengan mengakses alamat url http://localhost:8080/about
 ![8](https://user-images.githubusercontent.com/56241745/122193254-8ecf7200-cebe-11eb-820b-ea543391aa53.png)
 ### Ketika diakses akan mucul tampilan error 404 file not found, itu artinya file/page tersebut tidak ada. Untuk dapat mengakses halaman tersebut, harus dibuat terlebih dahulu Contoller yang sesuai dengan routing yang dibuat yaitu Contoller Page.
 ## Membuat Controller
@@ -78,3 +79,10 @@ php spark routes
 ### File app/view/template/footer.php
 ![15](https://user-images.githubusercontent.com/56241745/122222365-65254380-cedc-11eb-9edb-cdb55e1b450b.png)
 ### Kemudian ubah file app/view/about.php seperti berikut.
+![16](https://user-images.githubusercontent.com/56241745/122378048-cf4af080-cf8f-11eb-87d6-e76f8fc2a8d8.png)
+## Pertanyaan dan Tugas
+### Lengkapi kode program untuk menu lainnya yang ada pada Controller Page, sehingga semua link pada navigasi header dapat menampilkan tampilan dengan layout yang sama.
+### About
+![17](https://user-images.githubusercontent.com/56241745/122380490-1fc34d80-cf92-11eb-888a-74faa5e4cfe7.png)
+### Kontak
+![18](https://user-images.githubusercontent.com/56241745/122380506-2651c500-cf92-11eb-81f9-0c375c5b5395.png)
