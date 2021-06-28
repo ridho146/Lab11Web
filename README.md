@@ -120,3 +120,28 @@ CREATE DATABASE lab_ci4;
 ## Membuat View Detail
 ### Buat view baru untuk halaman detail dengan nama app/views/artikel/detail.php.
 ![10](https://user-images.githubusercontent.com/56241745/122890291-be262900-d36d-11eb-8aab-6b0aaaf05a4d.png)
+## Membuat Routing untuk artikel detail
+### Buka Kembali file app/config/Routes.php, kemudian tambahkan routing untuk artikel detail.
+![11](https://user-images.githubusercontent.com/56241745/123625598-1bbce880-d83a-11eb-954a-b10ff79e73e3.png)
+## Membuat Menu Admin
+### Menu admin adalah untuk proses CRUD data artikel. Buat method baru pada Controller Artikel dengan nama admin_index().
+![12a](https://user-images.githubusercontent.com/56241745/123620209-2a080600-d834-11eb-9ca0-5fbdd8658c64.png)
+### Selanjutnya buat view untuk tampilan admin dengan nama admin_index.php
+![12](https://user-images.githubusercontent.com/56241745/123619278-3a6bb100-d833-11eb-8dda-a087d53a0b61.png)
+### Tambahkan routing untuk menu admin seperti berikut:
+![13](https://user-images.githubusercontent.com/56241745/123620453-72bfbf00-d834-11eb-8c5e-d0327843a77e.png)
+### Akses menu admin dengan url http://localhost:8080/admin/artikel
+![14](https://user-images.githubusercontent.com/56241745/123624966-6ee26b80-d839-11eb-84ed-e12d01935570.png)
+## Menambah Data Artikel
+### Tambahkan fungsi/method baru pada Controller Artikel dengan nama add().
+![15](https://user-images.githubusercontent.com/56241745/123622394-5e7cc180-d836-11eb-8571-edb829c11e29.png)
+### Kemudian buat view untuk form tambah dengan nama form_add.php
+![16](https://user-images.githubusercontent.com/56241745/123623070-3e99cd80-d837-11eb-9012-482ded943c31.png)
+## Mengubah Data
+### Tambahkan fungsi/method baru pada Controller Artikel dengan nama edit().
+![17](https://user-images.githubusercontent.com/56241745/123623381-8ddffe00-d837-11eb-8d13-afbe4df77d64.png)
+### Kemudian buat view untuk form tambah dengan nama form_edit.php
+![18](https://user-images.githubusercontent.com/56241745/123624019-4c038780-d838-11eb-9c91-ae9d3810ed2c.png)
+## Menghapus Data
+### Tambahkan fungsi/method baru pada Controller Artikel dengan nama delete().
+![19](https://user-images.githubusercontent.com/56241745/123624245-8b31d880-d838-11eb-8102-756887e1b2c2.png)
