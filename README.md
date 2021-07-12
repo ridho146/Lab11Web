@@ -187,3 +187,33 @@ CREATE DATABASE lab_ci4;
 ![16a](https://user-images.githubusercontent.com/56241745/123765292-cfcc7b00-d8ef-11eb-9cbc-5922e8d76a9c.png)
 ## Setelah Login
 ![16](https://user-images.githubusercontent.com/56241745/123766177-a6f8b580-d8f0-11eb-83de-d2ac41853031.png)
+# Praktikum 14: Pagination dan Pencarian
+## Membuat Pagination
+### Pagination merupakan proses yang digunakan untuk membatasi tampilan yang panjang dari data yang banyak pada sebuah website. Fungsi pagination adalah memecah tampilan menjadi beberapa halaman tergantung banyaknya data yang akan ditampilkan pada setiap halaman. Untuk membuat pagination, buka Kembali Controller Artikel (htdocs\lab11_php_ci\ci4\Controllers\Artikel.php), kemudian modifikasi kode pada method admin_index seperti berikut.
+![1](https://user-images.githubusercontent.com/56241745/125324063-b7397780-e369-11eb-9c35-864b9a7a2b9b.png)
+### Kemudian buka file views/artikel/admin_index.php dan tambahkan kode berikut dibawah deklarasi tabel data.
+![2](https://user-images.githubusercontent.com/56241745/125324048-b3a5f080-e369-11eb-9688-5236c15a5bfc.png)
+### Kemudian buka file public/admin.css tambahkan kode berikut untuk mempercantik tampilan pagination
+![3](https://user-images.githubusercontent.com/56241745/125324037-af79d300-e369-11eb-931e-a093ade03bf5.png)
+### Selanjutnya buka kembali menu daftar artikel, tambahkan data lagi untuk melihat hasilnya.
+![4](https://user-images.githubusercontent.com/56241745/125324022-ab4db580-e369-11eb-86f5-404ec98b3622.png)
+## Membuat Pencarian
+### Pencarian data digunakan untuk memfilter data. Untuk membuat pencarian data, buka kembali Controller Artikel (htdocs\lab11_php_ci\ci4\Controllers\Artikel.php), pada method admin_index ubah kodenya seperti berikut
+![5](https://user-images.githubusercontent.com/56241745/125324013-a7ba2e80-e369-11eb-90f3-5a79146bfc24.png)
+### Kemudian buka kembali file views/artikel/admin_index.php dan tambahkan form pencarian sebelum deklarasi tabel seperti berikut:
+![6](https://user-images.githubusercontent.com/56241745/125323996-a2f57a80-e369-11eb-871b-064557d11a6a.png)
+### Dan pada link pager ubah seperti berikut.
+![7](https://user-images.githubusercontent.com/56241745/125323979-9bce6c80-e369-11eb-9c18-5ccc4e86595d.png)
+### Kemudian buka file public/admin.css tambahkan kode berikut untuk mempercantik tampilan pencarian
+![8](https://user-images.githubusercontent.com/56241745/125323959-953ff500-e369-11eb-846c-11a29a2f66a3.png)
+### Selanjutnya ujicoba dengan membuka kembali halaman admin artikel, masukkan kata kunci tertentu pada form pencarian.
+![9](https://user-images.githubusercontent.com/56241745/125323896-85c0ac00-e369-11eb-9d23-92f0bb2381d5.png)
+## Upload Gambar
+### Menambahkan fungsi unggah gambar pada tambah artikel. Buka kembali Controller Artikel (htdocs\lab11_php_ci\ci4\Controllers\Artikel.php), sesuaikan kode pada method add seperti berikut:
+![10](https://user-images.githubusercontent.com/56241745/125323881-80fbf800-e369-11eb-9d6f-28707a32980b.png)
+### Kemudian pada file views/artikel/form_add.php tambahkan field input file seperti berikut. Dan sesuaikan tag form dengan menambahkan ecrypt type seperti berikut.
+![11](https://user-images.githubusercontent.com/56241745/125323867-7ccfda80-e369-11eb-848d-77da757bff77.png)
+### Kemudian buka file public/admin.css tambahkan kode berikut untuk mempercantik tampilan tomboll upload gambar
+![12](https://user-images.githubusercontent.com/56241745/125323856-78a3bd00-e369-11eb-9352-8d846638dd15.png)
+### Akses menu tambah artikel.
+![13](https://user-images.githubusercontent.com/56241745/125323834-73df0900-e369-11eb-837c-ad686de725e1.png)
